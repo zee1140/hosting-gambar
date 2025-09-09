@@ -22,6 +22,7 @@
       line-height: 1.6;
       text-align: center;
       padding: 16px;
+       
     }
 
     @media (min-width: 1440px) {
@@ -46,8 +47,18 @@
 
     /*  SECTION */
     .section {
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
+
+   .section-1 {
+  background-image: url('images/bg-header-desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 100px; /* opsional, agar konten turun sedikit */
+  background-color: #fff; /* fallback */
+}
+
 
     .container {
       display: flex;
@@ -179,7 +190,7 @@
 <body>
 
   <!-- Bagian 1 -->
-  <div class="section">
+  <div class="section section-1">
     <div class="container">
       <img src="images/logo.svg" alt="Logo" />
     </div>
