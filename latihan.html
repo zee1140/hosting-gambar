@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clipboard Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /*  RESET  */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body(keseluruhan) */
+    body {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 16px;
+      color: hsl(210, 10%, 33%);
+      background-color: #fff;
+      line-height: 1.6;
+      text-align: center;
+      padding: 16px;
+    }
+
+    @media (min-width: 1440px) {
+      body {
+        font-size: 18px;
+        padding: 40px;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: hsl(210, 10%, 20%);
+    }
+
+    p {
+      color: hsl(210, 10%, 50%);
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    /*  SECTION */
+    .section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      background-color: hsl(171, 66%, 44%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .button2 {
+      background-color: hsl(233, 100%, 69%);
+    }
+
+    /* Bagian 3  */
+    .bagian3 {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .bagian3 img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    /*  Logo 1 */
+    .logo1 {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .logo {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Logo 2 */
+    .partners {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      opacity: 0.6;
+      margin-top: 60px;
+    }
+
+    .partners img {
+      max-height: 40px;
+      object-fit: contain;
+    }
+
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* === FOOTER === */
+    .footer {
+  background-color: hsl(210, 8%, 60%);
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1200px; /*--Membatasi lebar maksimum elemen agar tidak melebihi 1200 piksel--*/
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;  /*supaya tidak dipaksa dalam 1 baris kalau ukuran layar mengecil,jadi akan jadi baris baru*/
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-links a {
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social img {
+  height: 20px;
+  width: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Bagian 1 -->
+  <div class="section">
+    <div class="container">
+      <img src="images/logo.svg" alt="Logo" />
+    </div>
+    <h2>A history of your copy</h2>
+    <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+    <div class="container">
+      <button class="button">Download for iOS</button>
+      <button class="button button2">Download for Mac</button>
+    </div>
+  </div>
+
+  <!-- Bagian 2 -->
+  <div class="section">
+    <h2>Keep track of your snippets</h2>
+    <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+  </div>
+
+  <!-- Bagian 3 -->
+  <div class="section bagian3">
+    <img src="images/image-computer.png" alt="Computer" />
+    <div>
+      <h3>Quick Search</h3>
+      <p>Easily search your snippets by content, category, web address, application, and more.</p>
+      <h3>iCloud Sync</h3>
+      <p>Instantly saves and syncs snippets across all your devices.</p>
+      <h3>Complete History</h3>
+      <p>Retrieve any snippets from the first moment you started using the app.</p>
+    </div>
+  </div>
+
+  <!-- Bagian 4 -->
+  <div class="section">
+    <h2>Access Clipboard anywhere</h2>
+    <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+    <img class="responsive" src="images/image-devices.png" alt="Devices" />
+  </div>
+
+  <!-- Bagian 5 -->
+  <div class="section">
+    <h2>Supercharge your workflow</h2>
+    <p>We’ve got the tools to boost your productivity.</p>
+    <div class="logo1">
+      <div class="logo">
+        <img src="images/icon-blacklist.svg" alt="Blacklist" />
+        <h3>Create blacklists</h3>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div class="logo">
+        <img src="images/icon-text.svg" alt="Text Snippet" />
+        <h3>Plain text snippets</h3>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div class="logo">
+        <img src="images/icon-preview.svg" alt="Preview" />
+        <h3>Sneak preview</h3>
+        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian 6 -->
+  <div class="section partners">
+    <img src="images/logo-google.png" alt="Google" />
+    <img src="images/logo-ibm.png" alt="IBM" />
+    <img src="images/logo-microsoft.png" alt="Microsoft" />
+    <img src="images/logo-hp.png" alt="Hewlett Packard" />
+    <img src="images/logo-vector-graphics.png" alt="Vector Graphics" />
+  </div>
+
+  <!-- Bagian 7 -->
+  <div class="section">
+    <h2>Clipboard for iOS and Mac OS</h2>
+    <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+    <div class="container">
+      <button class="button">Download for iOS</button>
+      <button class="button button2">Download for Mac</button>
+    </div>
+  </div>
+
+  <!-- Bagian 8: Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="images/logo.svg" alt="Footer Logo" />
+    </div>
+
+    <div class="footer-links">
+      <a href="#">FAQs</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Press Kit</a>
+      <a href="#">Install Guide</a>
+    </div>
+
+    <div class="footer-socialmedia">
+      <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" /></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
